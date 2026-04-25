@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Puri — Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particles background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-brand">SP</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-greeting reveal">Hi, I'm</p>
+            <h1 class="hero-name reveal">
+                <span class="text-gradient">Shreya Puri</span>
+            </h1>
+            <h2 class="hero-title reveal">Data Analyst</h2>
+            <p class="hero-tagline reveal">
+                Transforming raw production data into actionable insights.<br>
+                Specializing in <span class="highlight">SQL</span>, <span class="highlight">Python</span>, and <span class="highlight">AWS</span> data pipelines.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-target="20">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Rework Reduced</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="30">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Steam Savings</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="16">0</span><span class="stat-suffix">x</span>
+                    <span class="stat-label">Faster Reports</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a Data Analyst with hands-on experience at <strong>CEAT Limited, Nagpur</strong>, where I specialize in
+                        manufacturing analytics and KPI-driven decision-making. I build end-to-end data pipelines on AWS
+                        and create dashboards that drive real business impact.
+                    </p>
+                    <p>
+                        My work has directly contributed to reducing production defects, optimizing energy usage,
+                        and improving operational efficiency across manufacturing processes. I thrive at the
+                        intersection of data engineering and business analytics.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-icon">🎓</span>
+                            <div>
+                                <strong>B.E. Computer Science</strong>
+                                <p>Govt. College of Engineering, Nagpur<br>CGPA: 7.04 | 2019–2023</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Nagpur, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card reveal">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">shreya@analytics ~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> cat about.json
+                            </div>
+                            <div class="terminal-output">
+<pre>{
+  "name": "Shreya Puri",
+  "role": "Data Analyst",
+  "company": "CEAT Limited",
+  "experience": "2+ years",
+  "passion": "Turning data → decisions",
+  "superpower": "16x query optimization"
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">02.</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst — <span class="text-accent">CEAT Limited, Nagpur</span></h3>
+                            <span class="timeline-date">July 2023 — Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed interactive dashboards using <strong>AWS QuickSight</strong> and SQL to monitor production KPIs, reducing rework by 20%, steam usage by 30%, and scrap from 0.87% to 0.62%</li>
+                            <li>Built end-to-end data pipelines using <strong>AWS (S3, Glue, Athena, Lambda, DMS, CloudWatch)</strong> for automated data ingestion, transformation, and reporting</li>
+                            <li>Optimized complex SQL queries (CTEs, joins, aggregations) to reduce genealogy and traceability reporting time from <strong>480 minutes to 30 minutes</strong></li>
+                            <li>Analyzed manufacturing process data to identify inefficiencies and support data-driven process improvements</li>
+                            <li>Integrated real-time machine data using <strong>OPC, Kepware, and Ignition</strong> to enable continuous monitoring and analytics</li>
+                            <li>Collaborated with cross-functional stakeholders to translate data insights into actionable decisions</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">QuickSight</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">OPC UA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">03.</span> Key Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-icon">📊</div>
+                    <h3 class="project-title">Manufacturing KPI Dashboard</h3>
+                    <p class="project-subtitle">Energy, Steam, Scrap & Rework Analysis</p>
+                    <p class="project-desc">
+                        Designed interactive dashboards using AWS QuickSight to track energy usage, steam consumption,
+                        scrap rate, and rework trends from machines (OPC/Modbus), MES warehouse, and Python-based applications.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Built data pipelines using MSSQL, AWS DMS, S3, Crawler, Glue, CloudWatch & Athena</li>
+                        <li>Reduced rework by <strong>20%</strong>, steam consumption by <strong>30%</strong>, scrap <strong>0.87% → 0.62%</strong></li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">AWS QuickSight</span>
+                        <span class="tag">S3</span>
+                        <span class="tag">Glue</span>
+                        <span class="tag">Athena</span>
+                        <span class="tag">MSSQL</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-icon">🔥</div>
+                    <h3 class="project-title">Real-Time Steam Monitoring</h3>
+                    <p class="project-subtitle">Idle State Analysis Dashboard</p>
+                    <p class="project-desc">
+                        Built a real-time monitoring system using Python (OPC UA) and SQL to detect idle curing presses
+                        consuming steam. Applied time-series analysis and rule-based logic to automatically stop steam during idle states.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Automated idle-state steam shutoff using time-series + rule-based logic</li>
+                        <li>Annual savings of <strong>₹1 Cr/year</strong></li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OPC UA</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Time Series</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-icon">🔍</div>
+                    <h3 class="project-title">Tyre Genealogy & Traceability</h3>
+                    <p class="project-subtitle">SQL-Based Analytics System</p>
+                    <p class="project-desc">
+                        Built a traceability system using SQL (CTEs, Window Functions, Stored Procedures) to track tyre
+                        lifecycle and enable defect root cause analysis.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Full tyre lifecycle tracking with defect root cause analysis</li>
+                        <li>Reduced reporting time from <strong>480 mins → 30 mins</strong> (16x faster)</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">CTEs</span>
+                        <span class="tag">Window Functions</span>
+                        <span class="tag">Stored Procedures</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">04.</span> Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Pandas</span>
+                        <span class="skill-pill">NumPy</span>
+                        <span class="skill-pill">Matplotlib</span>
+                        <span class="skill-pill">Seaborn</span>
+                        <span class="skill-pill">Plotly</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Database & SQL</h3>
+                    <div class="skill-items">
+                        <span class="skill-pill">MSSQL</span>
+                        <span class="skill-pill">Athena</span>
+                        <span class="skill-pill">Joins</span>
+                        <span class="skill-pill">CTEs</span>
+                        <span class="skill-pill">Window Functions</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon">📈</div>
+                    <h3>Data Visualization</h3>
+                    <div class="skill-items">
+                        <span class="skill-pill">AWS QuickSight</span>
+                        <span class="skill-pill">Power BI</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & Data Engineering</h3>
+                    <div class="skill-items">
+                        <span class="skill-pill">AWS S3</span>
+                        <span class="skill-pill">Glue</span>
+                        <span class="skill-pill">Athena</span>
+                        <span class="skill-pill">Lambda</span>
+                        <span class="skill-pill">DMS</span>
+                        <span class="skill-pill">CloudWatch</span>
+                        <span class="skill-pill">Crawler</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon">🔬</div>
+                    <h3>Analytics</h3>
+                    <div class="skill-items">
+                        <span class="skill-pill">Data Cleaning</span>
+                        <span class="skill-pill">EDA</span>
+                        <span class="skill-pill">KPI Tracking</span>
+                        <span class="skill-pill">Root Cause Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-icon">🏭</div>
+                    <h3>Industrial Data</h3>
+                    <div class="skill-items">
+                        <span class="skill-pill">OPC UA</span>
+                        <span class="skill-pill">Modbus</span>
+                        <span class="skill-pill">Ignition</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">05.</span> Certifications
+            </h2>
+            <div class="certs-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-badge">IBM</div>
+                    <p>ML, AI, Data Analysis, Visualization with Python, Databases & SQL, Data Science</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-badge">MS+SAP</div>
+                    <p>Artificial Intelligence Certification — TechSaksham (2022–23)</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-badge">AWS</div>
+                    <p>Building DataLakes on AWS</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-badge">AWS</div>
+                    <p>Security Engineering on AWS</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-badge">AWS</div>
+                    <p>AWS ML Summer School</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">06.</span> Get In Touch
+            </h2>
+            <div class="contact-content reveal">
+                <p class="contact-text">
+                    I'm always open to discussing data analytics, new opportunities, or interesting projects.
+                    Feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:shreyapuri634@gmail.com" class="contact-card">
+                        <span class="contact-icon">✉️</span>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">shreyapuri634@gmail.com</span>
+                    </a>
+                    <a href="tel:+919325336846" class="contact-card">
+                        <span class="contact-icon">📱</span>
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">(+91) 9325336846</span>
+                    </a>
+                    <a href="https://linkedin.com/in/" class="contact-card" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">💼</span>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">Connect with me</span>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <span class="contact-icon">📍</span>
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Nagpur, MH 440017</span>
+                    </a>
+                </div>
+                <a href="mailto:shreyapuri634@gmail.com" class="btn btn-primary btn-lg">Say Hello 👋</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Built by <span class="text-accent">Shreya Puri</span></p>
+        <p class="footer-sub">© 2026 — Made with ❤️ and data</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
